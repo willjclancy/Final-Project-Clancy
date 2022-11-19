@@ -1,6 +1,6 @@
 .projects {
     display: flex;
-    background-color: lightblue;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
