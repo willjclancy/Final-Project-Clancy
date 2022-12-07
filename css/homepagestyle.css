@@ -2,27 +2,123 @@ h3 {
     text-align: center;
 }
 
+.now{
+    display: block;
+    border: 2px solid #3C66B4;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+p {
+    text-align: center;
+}
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: auto;
+    align-content: center;
     justify-content: center;
     gap: 10px;
+    margin: 5px;
 }
 
-.grid > img {
-    border: 2px solid #3C66B4;
-    width: 300px;
-    height: 300px;
-}
-
-.usrail {
-    display: grid;
-    grid-template-columns: 350px 350px;
-    justify-content: space-evenly;
-}
-
-.usrail > img {
+.grid  img {
+    object-fit: cover;
     width: 100%;
-    height: 100%;
+    max-height: 100%;
+    border: 2px solid #3C66B4;
 }
 
+.grid p {
+    text-align: center;
+}
+
+.china {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #ececec;
+    padding: 10px;
+}
+
+.spain {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #bad7ff;
+    padding: 10px;
+}
+
+.germany {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #ececec;
+    padding: 10px;
+}
+
+.japan {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #bad7ff;
+    padding: 10px;
+}
+
+.uk {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #ececec;
+    padding: 10px;
+}
+
+.france {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #bad7ff;
+    padding: 10px;
+}
+
+@media screen and (min-width: 520px) {
+    .china, .spain, .germany, .japan, .uk, .france {
+        grid-template-columns: auto auto;
+    }
+    .china p, .spain p, .germany p, .japan p, .uk p, .france p {
+        grid-row: 3;
+        grid-column: 1/ span 2;
+    }
+    .china img, .spain img, .germany img, .japan img, .uk img, .france img {
+        height: 200px;
+    }
+    .usrail {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+    .now {
+        height: 85%;
+        width: 90%;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    h2 {
+        text-align: center;
+    }
+    .usrail {
+        grid-template-columns: 1fr 1fr;
+        padding: 15px;
+        background-color: #5d6f87;
+        color: white;
+        border-radius: 10px;
+    }
+    .now {
+        height: 200px;
+        width: 350px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .japan {
+        grid-row: 2;
+    }
+}
