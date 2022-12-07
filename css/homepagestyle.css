@@ -44,7 +44,7 @@ p {
 .spain {
     display: grid;
     grid-template-columns: auto;
-    background-color: #bad7ff;
+    background-color: #D5E5F2;
     padding: 10px;
 }
 
@@ -58,7 +58,7 @@ p {
 .japan {
     display: grid;
     grid-template-columns: auto;
-    background-color: #bad7ff;
+    background-color: #D5E5F2;
     padding: 10px;
 }
 
@@ -72,7 +72,7 @@ p {
 .france {
     display: grid;
     grid-template-columns: auto;
-    background-color: #bad7ff;
+    background-color: #D5E5F2;
     padding: 10px;
 }
 

@@ -62,3 +62,21 @@ img {
         align-content: center;
     }
 }
+
+@media screen and (min-width: 880px) {
+    .projects > div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 300px;
+    }
+    .projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    img {
+        max-width: 100%;
+    }
+}
